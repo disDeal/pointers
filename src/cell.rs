@@ -1,5 +1,6 @@
 use std::cell::UnsafeCell;
 
+// SAFETY: Only foe one-thread usage
 pub struct Cell<T> {
     value: UnsafeCell<T>,
 }
